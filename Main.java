@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (true){
+            
             System.out.println("\n---MENU---");
             System.out.println("1 - Adicionar contato");
             System.out.println("2 - Listar contatos");
