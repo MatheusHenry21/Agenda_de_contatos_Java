@@ -21,24 +21,15 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    System.out.print("\nDigite o nome da pessoa: ");
-                    String nome = sc.nextLine();
-
-                    System.out.print("\nDigite o celular da pessoa: ");
-                    String celular = sc.nextLine();
-
-                    System.out.print("\nDigite o endereço da pessoa(Opcional): ");
-                    String endereco = sc.nextLine();
-
-                    Model pessoa1 = new Model(nome, celular, endereco);
-                    pessoa1.salvamento();
+                    //pass
                 case 2:
                     //pass
                 case 3:
                     //pass
                 case 4:
                     //pass
-
+                default:
+                    System.out.println("\nOpção inexistente!");
             }
         }
     }

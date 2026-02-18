@@ -8,8 +8,4 @@ public class Model {
         this.celular = celular;
         this.endereco = endereco;
     }
-
-    public void salvamento(){
-        System.out.println("\nO contato de " + nome + ", foi adicionado com sucesso!");
-    }
 }
