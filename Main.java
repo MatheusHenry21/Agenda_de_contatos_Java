@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
+import model.Contato;
 import service.Agenda;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Agenda agenda = new Agenda();
         while (true){
             
             System.out.println("\n---MENU---");
@@ -23,9 +25,18 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    Agenda agenda = new Agenda();
+                    System.out.print("Nome: ");
+                    String nome = sc.nextLine();
+                    System.out.print("Celular: ");
+                    String celular = sc.nextLine();
+                    System.out.print("Endereço: ");
+                    String endereco = sc.nextLine();
+
+                    agenda.adicionar(new Contato(nome, celular, endereco));
+                    break;
                 case 2:
-                    //pass
+                    agenda.listar();
+                    break;
                 case 3:
                     //pass
                 case 4:
