@@ -24,7 +24,6 @@ public class Main {
             switch (opcao) {
                 case 1:
                     Agenda agenda = new Agenda();
-
                 case 2:
                     //pass
                 case 3:
