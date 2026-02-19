@@ -13,14 +13,15 @@ public class Agenda {
 
     public void listar(){
         if (contatos.isEmpty()){
-            System.out.println("Lista vazia!");
-
-            for (Contato c: contatos)
+            System.out.println("\nLista vazia!");
+            return;
+        }
+        for (Contato c: contatos){
             System.out.println(
             c.getNome() + " - " +
             c.getCelular() + " - " +
             c.getEndereco()
             );
-        }
+        }     
     }
 }
