@@ -1,15 +1,18 @@
+package service;
 import java.util.ArrayList;
 
-public class Agenda {
-    private ArrayList<Model> contatos = new ArrayList<>();
+import model.Contato;
 
-    public void adicionar(Model contato) {
+public class Agenda {
+    private ArrayList<Contato> contatos = new ArrayList<>();
+
+    public void adicionar(Contato contato) {
         contatos.add(contato);
         System.out.println("Contato adicionado com sucesso!");
     }
 
     public void listar(){
-        for (Model c: contatos){
+        for (Contato c: contatos){
             System.out.println(c.nome + " - " + c.celular);
         }
     }

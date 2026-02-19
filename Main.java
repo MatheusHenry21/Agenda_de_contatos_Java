@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import service.Agenda;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -21,7 +23,8 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    //pass
+                    Agenda agenda = new Agenda();
+
                 case 2:
                     //pass
                 case 3:
