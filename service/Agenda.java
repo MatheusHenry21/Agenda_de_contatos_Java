@@ -8,12 +8,19 @@ public class Agenda {
 
     public void adicionar(Contato contato) {
         contatos.add(contato);
-        System.out.println("Contato adicionado com sucesso!");
+        System.out.println("O contato de " + contato.getNome() + " adicionado com sucesso!");
     }
 
     public void listar(){
-        for (Contato c: contatos){
-            System.out.println(c.nome + " - " + c.celular);
+        if (contatos.isEmpty()){
+            System.out.println("Lista vazia!");
+
+            for (Contato c: contatos)
+            System.out.println(
+            c.getNome() + " - " +
+            c.getCelular() + " - " +
+            c.getEndereco()
+            );
         }
     }
 }
