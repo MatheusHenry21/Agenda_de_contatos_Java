@@ -9,4 +9,16 @@ public class Contato {
         this.celular = celular;
         this.endereco = endereco;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
 }
